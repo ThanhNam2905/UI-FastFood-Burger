@@ -90,6 +90,11 @@ body {
         &:hover {
             color: $yellow-color;
         }
+
+        &.fa-xmark {
+            font-size: 2.6rem;
+            transform: scale(1.4) rotate(180deg);   
+        }
     }
 
     #menu-btn {
@@ -101,7 +106,7 @@ body {
         a {
             font-size: 2rem;
             color: $white-color;
-            margin-left: 1.7rem;
+            margin-left: 1.9rem;
             font-weight: 600;
 
             &:hover {
@@ -110,5 +115,137 @@ body {
                 text-underline-offset: 0.7rem;
             }
         }
+
+        .space {
+            width: 16rem;
+            display: inline-block;
+        }
+    }
+
+    .logo {
+        position: absolute;
+        top: 2.7rem; left: 49.3%;
+        transform: translateX(-50%);
+
+        img {
+            width: 15rem;
+        }
+    }
+
+    .search-form {
+        height: 7rem;
+        border-top: $border;
+        padding: 0 3rem;
+        background-color: $black-color;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 99%;
+        left: 0; right: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+        &.active {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        input {
+            font-size: 1.6rem;
+            width: 100%;
+            text-transform: none;
+            background: none;
+            color: $white-color;
+        }
+
+        label {
+            color: $white-color;
+            font-size: 2.5rem;
+            cursor: pointer;
+
+            &:hover {
+                color: $yellow-color;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// Media queries: Responsive Design
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 3rem 4rem;
+    }
+}
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 57%;
+    }
+
+    .header {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 53%;
+    }
+
+    .header {
+        padding: 2.5rem 3.5rem;
+        justify-content: end;
+        gap: 2rem;
+        align-items: center;
+
+        #menu-btn {
+            display: block;
+        }
+
+        .logo {
+            transform: translateX(0);
+            left: 2.7rem;
+            top: 2.5rem;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 99%;
+            left: 0; right: 0;
+            background-color: $black-color;
+            padding: 1rem 3rem;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+            &.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            a {
+                display: block;
+                margin: 2.5rem 0; 
+            }
+
+            .space {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 51%;
+    }
+
+    .header {
+        padding: 2rem 2.5rem;
     }
 }

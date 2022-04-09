@@ -80,6 +80,12 @@ body {
   color: #eacf4f;
 }
 
+.header .icons.fa-xmark {
+  font-size: 2.6rem;
+  -webkit-transform: scale(1.4) rotate(180deg);
+          transform: scale(1.4) rotate(180deg);
+}
+
 .header #menu-btn {
   display: none;
 }
@@ -87,7 +93,7 @@ body {
 .header .navbar a {
   font-size: 2rem;
   color: #fff;
-  margin-left: 1.7rem;
+  margin-left: 1.9rem;
   font-weight: 600;
 }
 
@@ -95,5 +101,134 @@ body {
   color: #eacf4f;
   text-decoration: underline;
   text-underline-offset: 0.7rem;
+}
+
+.header .navbar .space {
+  width: 16rem;
+  display: inline-block;
+}
+
+.header .logo {
+  position: absolute;
+  top: 2.7rem;
+  left: 49.3%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header .logo img {
+  width: 15rem;
+}
+
+.header .search-form {
+  height: 7rem;
+  border-top: 0.2rem solid rgba(255, 255, 255, 0.3);
+  padding: 0 3rem;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  right: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.header .search-form.active {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.header .search-form input {
+  font-size: 1.6rem;
+  width: 100%;
+  text-transform: none;
+  background: none;
+  color: #fff;
+}
+
+.header .search-form label {
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.header .search-form label:hover {
+  color: #eacf4f;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 57%;
+  }
+  .header {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 53%;
+  }
+  .header {
+    padding: 2.5rem 3.5rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header #menu-btn {
+    display: block;
+  }
+  .header .logo {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    left: 2.7rem;
+    top: 2.5rem;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    padding: 1rem 3rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    margin: 2.5rem 0;
+  }
+  .header .navbar .space {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 51%;
+  }
+  .header {
+    padding: 2rem 2.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
