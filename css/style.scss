@@ -90,6 +90,17 @@ section {
     }
 }
 
+.heading {
+    text-align: center;
+    margin: 2.5rem 0;
+
+    h1 {
+        @include titleText(3rem);
+        margin: 0.3rem 0 2rem;
+    }
+}
+
+
 // CSS Header
 .header {
     position: fixed;
@@ -262,6 +273,61 @@ section {
         }
     }
 }
+
+// CSS Menu
+.menu {
+
+    .box-container {
+        @include grid(30rem);
+        gap: 4rem;
+
+        .box {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+
+            &:hover {
+                .image img {
+                    transform: translateY(-1rem);
+                }
+
+                box-shadow: 0 0.5rem 1rem $yellow-color;
+            }
+
+            .image {
+                height: 24rem;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .content {
+                padding: 1rem 0;
+
+                .rating {
+
+                    i {
+                        color: $yellow-color;
+                        margin: 0 0.3rem;
+                        font-size: 2rem;
+                    }
+                }
+
+                h3 {
+                    @include titleText(2rem);
+                    margin: 1.5rem 0 1rem;
+                }
+
+                .price {
+                    @include graphText(2rem);
+                }
+            }
+        }
+    }
+}
+
 
 
 
