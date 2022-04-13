@@ -51,7 +51,7 @@ body {
 }
 
 section {
-  padding: 3rem 9%;
+  padding: 4rem 9%;
 }
 
 .btn {
@@ -215,6 +215,59 @@ section {
   line-height: 1.7;
   color: #aaa;
   padding: 1rem 0;
+}
+
+.services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.5rem;
+}
+
+.services .box {
+  text-align: center;
+  padding: 2.5rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+}
+
+.services .box:hover {
+  background-color: #eacf4f;
+}
+
+.services .box:hover i {
+  background-color: #fff;
+}
+
+.services .box:hover p {
+  color: #000;
+}
+
+.services .box i {
+  width: 7rem;
+  height: 7rem;
+  line-height: 7rem;
+  color: #000;
+  background-color: #eacf4f;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  font-size: 2.7rem;
+  cursor: pointer;
+}
+
+.services .box h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.2rem;
+}
+
+.services .box p {
+  font-size: 1.55rem;
+  line-height: 1.7;
+  color: #aaa;
 }
 
 @media (max-width: 1200px) {
