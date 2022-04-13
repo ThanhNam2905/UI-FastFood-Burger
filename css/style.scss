@@ -69,7 +69,7 @@ body {
 }
 
 section {
-    padding: 3rem 9%;
+    padding: 4rem 9%;
 }
 
 .btn {
@@ -217,7 +217,51 @@ section {
     }
 }
 
+// CSS Services
+.services {
+    @include grid(30rem);
 
+    .box {
+        text-align: center;
+        padding: 2.5rem;
+        border: $border;
+        border-radius: 0.5rem;
+
+        &:hover {
+            background-color: $yellow-color;
+            
+            i {
+                background-color: $white-color;
+            }
+            
+            p {
+                color: $black-color;
+            }
+        }
+
+        i {
+            width: 7rem;
+            height: 7rem;
+            line-height: 7rem;
+            color: $black-color;
+            background-color: $yellow-color;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            font-size: 2.7rem;
+            cursor: pointer;
+        }
+
+        h3 {
+            padding: 1rem 0;
+            @include titleText(2rem);
+            letter-spacing: 0.2rem;
+        }
+
+        p {
+            @include graphText(1.55rem);
+        }
+    }
+}
 
 
 
