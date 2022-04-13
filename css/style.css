@@ -416,6 +416,47 @@ section {
   padding-right: 0.5rem;
 }
 
+.reviews .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.5rem;
+  gap: 3rem;
+}
+
+.reviews .box-container .box {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.reviews .box-container .box img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.reviews .box-container .box h3 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.reviews .box-container .box p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #aaa;
+  margin: 1.3rem 0;
+}
+
+.reviews .box-container .box .rating i {
+  color: #eacf4f;
+  font-size: 1.6rem;
+  margin: 0.2rem;
+}
+
 @media (max-width: 1200px) {
   section {
     padding: 3rem 5rem;
