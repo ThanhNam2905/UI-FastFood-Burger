@@ -457,6 +457,103 @@ section {
   margin: 0.2rem;
 }
 
+.contact .row {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.contact .row .map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+}
+
+.contact .row .form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.contact .row .form .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact .row .form .form-container .box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
+  text-align: center;
+}
+
+.contact .row .form .form-container .box i {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  background-color: #eacf4f;
+  color: #000;
+  border-radius: 50%;
+  font-size: 2.1rem;
+}
+
+.contact .row .form .form-container .box h4 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+
+.contact .row .form .form-container .box p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #aaa;
+  text-transform: none;
+}
+
+.contact .row .form form {
+  width: 100%;
+  text-align: center;
+}
+
+.contact .row .form form .input-box {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem 1.6rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.contact .row .form form .input-box:focus {
+  border-color: #eacf4f;
+  color: #eacf4f;
+}
+
+.contact .row .form form textarea {
+  height: 13rem;
+  resize: none;
+}
+
+.contact .row .form form .btn {
+  margin-top: 0;
+  border-radius: 0.5rem;
+}
+
 @media (max-width: 1200px) {
   section {
     padding: 3rem 5rem;
@@ -545,6 +642,9 @@ section {
   .about .image img {
     width: 60%;
   }
+  .contact .row .map {
+    min-height: 38rem;
+  }
 }
 
 @media (max-width: 450px) {
@@ -566,6 +666,9 @@ section {
   }
   .about .image img {
     width: 70%;
+  }
+  .contact .row .map {
+    min-height: 32rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

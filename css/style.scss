@@ -419,6 +419,92 @@ section {
     }
 }
 
+// CSS Contact
+.contact {
+
+    .row {
+        margin-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+
+        .map {
+            flex: 1 1 40rem;
+            border: $border;
+            border-radius: 0.5rem;
+        }
+
+        .form {
+            flex: 1 1 40rem;
+
+            .form-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                margin-bottom: 2rem;
+
+                .box {
+                    flex: 1 1 15rem;
+                    
+                    text-align: center;
+
+                    i {
+                        width: 5rem;
+                        height: 5rem;
+                        line-height: 5rem;
+                        background-color: $yellow-color;
+                        color: $black-color;
+                        border-radius: 50%;
+                        font-size: 2.1rem;
+                    }
+
+                    h4 {
+                        @include titleText(1.8rem);
+                        margin: 1rem 0;
+                        text-transform: capitalize;
+                    }
+
+                    p {
+                        @include graphText(1.4rem);
+                        text-transform: none;
+                    }
+                }
+            }
+
+            form {
+                width: 100%;
+                text-align: center;
+
+                .input-box {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                    padding: 1rem 1.6rem;
+                    border-radius: 0.5rem;
+                    border: $border;
+                    background: transparent;
+                    color: $white-color;
+                    font-size: 1.5rem;
+
+                    &:focus {
+                        border-color: $yellow-color;
+                        color: $yellow-color;
+                    }
+                }
+
+                textarea {
+                    height: 13rem;
+                    resize: none;
+                }
+
+                .btn {
+                    margin-top: 0;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
 
 
 
@@ -518,6 +604,12 @@ section {
             }
         } 
     }
+
+    .contact .row {
+        .map {
+            min-height: 38rem;
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -551,5 +643,11 @@ section {
                 width: 70%; 
             }
         } 
+    }
+
+    .contact .row {
+        .map {
+            min-height: 32rem;
+        }
     }
 }
