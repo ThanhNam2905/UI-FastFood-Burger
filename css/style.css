@@ -72,6 +72,18 @@ section {
   color: #000;
 }
 
+.heading {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0.3rem 0 2rem;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -266,6 +278,64 @@ section {
 
 .services .box p {
   font-size: 1.55rem;
+  line-height: 1.7;
+  color: #aaa;
+}
+
+.menu .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2.5rem;
+  gap: 4rem;
+}
+
+.menu .box-container .box {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.menu .box-container .box:hover {
+  -webkit-box-shadow: 0 0.5rem 1rem #eacf4f;
+          box-shadow: 0 0.5rem 1rem #eacf4f;
+}
+
+.menu .box-container .box:hover .image img {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.menu .box-container .box .image {
+  height: 24rem;
+}
+
+.menu .box-container .box .image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu .box-container .box .content {
+  padding: 1rem 0;
+}
+
+.menu .box-container .box .content .rating i {
+  color: #eacf4f;
+  margin: 0 0.3rem;
+  font-size: 2rem;
+}
+
+.menu .box-container .box .content h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 1.5rem 0 1rem;
+}
+
+.menu .box-container .box .content .price {
+  font-size: 2rem;
   line-height: 1.7;
   color: #aaa;
 }
