@@ -328,6 +328,60 @@ section {
     }
 }
 
+// CSS About
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+
+    .image {
+        flex: 1 1 40rem;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        flex: 1 1 40rem;
+
+        .title {
+            @include titleText(3.5rem);
+            margin-bottom: 1.5rem;
+            text-transform: capitalize;
+        }
+        
+        p {
+            @include graphText(1.6rem);
+            color: $light-color;
+            margin: 1rem 0;
+            line-height: 2;
+        }
+
+        .icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: center;
+            margin: 2rem 0;
+
+            h3 {
+                flex: 1 1 16rem;
+                @include titleText(1.7rem);
+                color: $white-color;
+                text-transform: capitalize;
+                
+                i {
+                    color: $yellow-color;
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
 
 
 
@@ -418,6 +472,17 @@ section {
             max-width: 60%;
         }
     }
+
+    .about {
+        .image {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 60%; 
+            }
+        } 
+    }
 }
 
 @media (max-width: 450px) {
@@ -443,5 +508,13 @@ section {
                 margin-bottom: 1rem;
             }
         }
+    }
+
+    .about {
+        .image {
+            img {
+                width: 70%; 
+            }
+        } 
     }
 }
