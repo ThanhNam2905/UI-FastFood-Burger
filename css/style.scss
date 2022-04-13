@@ -382,6 +382,43 @@ section {
     }
 }
 
+// CSS Reviews 
+.reviews {
+
+    .box-container {
+        @include grid(30rem);
+        gap: 3rem;
+
+        .box {
+            text-align: center;
+            padding: 2.5rem;
+
+            img {
+                width: 10rem;
+                height: 10rem;
+                border-radius: 50%;
+                margin-bottom: 1.5rem;
+            }
+
+            h3 {
+                @include titleText(1.9rem);
+                text-transform: capitalize;
+            }
+
+            p {
+                @include graphText(1.4rem);
+                margin: 1.3rem 0;
+            }
+
+            .rating i {
+                color: $yellow-color;
+                font-size: 1.6rem;
+                margin: 0.2rem;
+            }
+        }
+    }
+}
+
 
 
 
@@ -404,7 +441,6 @@ section {
 }
 
 @media (max-width: 991px) {
-
     html {
         font-size: 57%;
     }
@@ -419,7 +455,6 @@ section {
 }
 
 @media (max-width: 768px) {
-
     html {
         font-size: 53%;
     }
