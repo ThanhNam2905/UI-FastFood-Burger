@@ -647,6 +647,144 @@ section {
   overflow: hidden;
 }
 
+.footer {
+  padding: 4rem 9%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+  background: linear-gradient(transparent, #000);
+  border-top: 0.2rem solid rgba(255, 255, 255, 0.3);
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(22rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer .box-container .box .logo {
+  margin-bottom: 0.5rem;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: #aaa;
+  text-transform: none;
+  line-height: 1.6;
+}
+
+.footer .box-container .box .address, .footer .box-container .box .email, .footer .box-container .box .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.footer .box-container .box .address i, .footer .box-container .box .email i, .footer .box-container .box .phone i {
+  color: #eacf4f;
+  width: 2.5rem;
+}
+
+.footer .box-container .box .address .mailto, .footer .box-container .box .address .telephone, .footer .box-container .box .email .mailto, .footer .box-container .box .email .telephone, .footer .box-container .box .phone .mailto, .footer .box-container .box .phone .telephone {
+  color: #fff;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.footer .box-container .box a {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+.footer .box-container .box a i.fa-caret-right {
+  padding-right: 0.8rem;
+}
+
+.footer .box-container .box a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  color: #eacf4f;
+  font-weight: 700;
+}
+
+.footer .box-container .box a:hover i.fa-caret-right {
+  padding-right: 1.5rem;
+}
+
+.footer .box-container .box form {
+  margin-top: 1.5rem;
+}
+
+.footer .box-container .box form .input-box {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  text-transform: none;
+  font-size: 1.6rem;
+  background: transparent;
+  color: #fff;
+  border: 0.2rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+}
+
+.footer .box-container .box form .input-box:focus {
+  border-color: #eacf4f;
+  color: #000;
+  background-color: #eacf4f;
+}
+
+.footer .box-container .box form .input-box:focus::-webkit-input-placeholder {
+  color: #000;
+}
+
+.footer .box-container .box form .input-box:focus:-ms-input-placeholder {
+  color: #000;
+}
+
+.footer .box-container .box form .input-box:focus::-ms-input-placeholder {
+  color: #000;
+}
+
+.footer .box-container .box form .input-box:focus::placeholder {
+  color: #000;
+}
+
+.footer .box-container .box .btn {
+  margin-top: 2.5rem;
+}
+
+.footer .credit-footer {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  padding-top: 3rem;
+  border-top: 0.2rem solid rgba(255, 255, 255, 0.3);
+}
+
+.footer .credit-footer span {
+  color: #eacf4f;
+  font-style: italic;
+  font-weight: 700;
+}
+
 @media (max-width: 1200px) {
   section {
     padding: 3rem 5rem;
